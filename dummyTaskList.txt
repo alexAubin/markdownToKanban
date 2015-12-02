@@ -1,0 +1,33 @@
+
+My super project
+=================
+
+1. Secret weapon
+-----------------
+
+First we need a secret weapon
+
+- [x] Call NASA to plan a meeting
+- [x] Technology
+- [ ] Cool name    #comm
+- [ ] Build it !   #standby
+
+2. Cat army
+------------
+
+To make use of our secret weapon, we need to get cats that will carry them !
+
+- [ ] Cat treats    #groceries
+- [ ] Nap spots (otherwise they'll nap during the operations !!!)     #urgent
+- [x] Petting skill
+
+3. Conquer the world
+---------------------
+
+Then we actually conquer the wurld
+
+- [ ] Write plan    #urgent
+- [ ] Apply plan    
+- [ ] ???
+- [ ] Profit        #party #money
+
