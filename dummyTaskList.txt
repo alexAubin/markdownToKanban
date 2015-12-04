@@ -5,12 +5,19 @@ My super project
 1. Secret weapon
 -----------------
 
-First we need a secret weapon
+First we need a secret weaponz! !!!
 
 - [x] Call NASA to plan a meeting
-- [x] Technology
-- [ ] Cool name    #comm
-- [ ] Build it !   #standby
+
+> Well, they don't believe you can conquer the world with cats :( #fail
+
+- [ ] Technology #ongoing
+
+> Dude wut kind of technology are we tolkien abaut exatly du you want some
+> pew pew or big death star or wut ???
+
+- [ ] Cool name    #comm @nico
+- [ ] Build it !   @alex
 
 2. Cat army
 ------------
@@ -18,7 +25,12 @@ First we need a secret weapon
 To make use of our secret weapon, we need to get cats that will carry them !
 
 - [ ] Cat treats    #groceries
-- [ ] Nap spots (otherwise they'll nap during the operations !!!)     #urgent
+- [ ] Nap spots     #urgent
+
+> Otherwise they'll nap during the operations !!!
+
+### A title
+
 - [x] Petting skill
 
 3. Conquer the world
@@ -26,8 +38,11 @@ To make use of our secret weapon, we need to get cats that will carry them !
 
 Then we actually conquer the wurld
 
-- [ ] Write plan    #urgent
-- [ ] Apply plan    
+- [ ] **Write plan**    #urgent
+
+> Discuss this point here
+
+- [ ] Apply plan    @alex 
 - [ ] ???
-- [ ] Profit        #party #money
+- [ ] Profit !      #party #money #yay
 

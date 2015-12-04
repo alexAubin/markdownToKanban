@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pandoc dummyTaskList.txt --to HTMLTasks.lua | tee index.html
+pandoc dummyTaskList.txt --to kanbanboard.lua | tee index.html

@@ -32,6 +32,16 @@ local function escape(s, in_attribute)
     end)
 end
 
+local function replaceTaskTags(s)
+  -- Replace 
+  s = s:gsub("%[ %]",'<div class="checkbox_unchecked"></div>')
+  s = s:gsub("%[x%]",'<div class="checkbox_checked"></div>')
+  s = s:gsub("%[X%]",'<div class="checkbox_checked"></div>')
+  s = s:gsub("#(%a+)",'<span class="hashtag">#%1</span>')
+  return s
+end
+
+
 -- Helper function to convert an attributes table into
 -- a string that can be put into HTML tags.
 local function attributes(attr)
@@ -81,10 +91,10 @@ function Doc(body, metadata, variables)
   add('<html>')
   add('<head>')
   add('<title>' .. (title or '') .. '</title>')
+  add('<link rel="stylesheet" type="text/css" href="style.css">')
   add('</head>')
   add('<body>')
-
-  body = body:gsub("<h1>","<div class=\"h1\">\n<h1>")
+  
   add(body)
   if (openedSectionDiv) then add("</div>") end
 
@@ -95,6 +105,7 @@ function Doc(body, metadata, variables)
     end
     add('</ol>')
   end
+
   add('</body>')
   add('</html>')
   return table.concat(buffer,'\n')
@@ -208,9 +219,9 @@ function Header(lev, s, attr)
       
   end end
  
-  
-
+  if (lev == 1) then output = output .. "<div class=\"header\">" end
   output = output .. "<h" .. lev ..  ">" .. s .. "</h" .. lev .. ">"
+  if (lev == 1) then output = output .. "</div>" end
   return output 
 end
 
@@ -238,6 +249,7 @@ end
 function BulletList(items)
   local buffer = {}
   for _, item in pairs(items) do
+    item = replaceTaskTags(item)
     table.insert(buffer, "<li>" .. item .. "</li>")
   end
   return "<ul>\n" .. table.concat(buffer, "\n") .. "\n</ul>"
